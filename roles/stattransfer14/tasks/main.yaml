@@ -23,7 +23,8 @@
 
 - name: Copy over the install bin
   copy:
-    src: "{{stattransfer_local_bin_directory}}/stlinux64_install"
+#    src: "{{stattransfer_local_bin_directory}}/stlinux64_install"
+    src: "/tmp/artifacts/stlinux64_install"
     dest: "{{stattransfer_install_directory}}/stlinux64_install"
   when: custom_repo
   tags:
